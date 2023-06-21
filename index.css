@@ -55,3 +55,63 @@
     text-decoration: underline;
     color:antiquewhite;
 }
+.about{
+    text-align: center;  
+}
+.about p{
+    font-size: 17px;  
+}
+.about p{
+    text-align: center;  
+}
+.about h2{
+    color: #139139;
+}
+.cards{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 200px;
+    padding-top: 45px;
+    text-align: center;
+}
+.cards img{
+    height: 140px;
+    width: 336px;
+    
+}
+.card-body{
+    height:100%;
+}
+.card1{
+    width: 50%;
+    height: 100%;
+}
+.card2{
+    width: 50%;
+    height: 100%; 
+}
+.card2 p {
+    padding: 0px 100px;
+}
+.awards{
+    padding-top: 100px;
+    text-align: center;
+}
+.awards h2{
+    color: #139139;
+}
+.trophies{
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    /* padding-top: 30px; */
+}
+.trophies img{
+    height:100px;
+    width:100px;
+}
+.achievements{
+    width: 20%;
+    padding : 30px 20px
+}
