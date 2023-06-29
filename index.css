@@ -1,3 +1,8 @@
+*{
+    margin: 2px 0px;
+    padding: 0px;
+    scroll-behavior: smooth;
+}
 .navbar{
     display: flex;
     align-items: center;
@@ -6,7 +11,6 @@
 }
 .logo{
     width: 50%;
-    
 }
 .logo img{
     height:40px;
@@ -15,41 +19,41 @@
 }
 .links{
     width: 50%;
-    
+    margin-left: 330px;
+    font-family: 'Bodoni MT', 'Courier New', Courier, monospace;
 }
 .links a{
     color: #0a0a0a;
-    font-size: 20px;
     text-decoration: none;
-    margin:10px 10px 100px 0;
+    font-size: 23px;
     padding: 0px 25px;
 }
 .links a:hover{
     color:grey;    
 }
 .background-image{
-    background: rgba(0,0,0,0.3)url("background.jpg");
+    background: rgba(0,0,0,0.5)url("background.jpg");
     background-blend-mode: darken;
     height:100vh;
     width: 100%;
 }
-/* .section{
-    display: flex;
-    justify-content: center;
-    align-items: flex-end;
-} */
 .text-section{
     color:white;
-    text-align: center;
     padding: 23% 0px;
-    font-size: 25px;
+    font-size: 27px;
+    text-align: center;
+}
+
+.text-section p{
+        font-family: 'Dejavu Sans',' Bodoni MT', 'Arial', 'Helvetica', 'sans-serif' ;
+        padding: 0px 392px;
 }
 
 .text-section a{
     text-decoration: none;
     color:white;
     font-size: 18px;
- 
+    font-style:italic ;
 }
 .text-section a:hover{
     text-decoration: underline;
@@ -58,21 +62,23 @@
 .about{
     text-align: center;  
 }
-.about p{
-    font-size: 17px;  
-}
-.about p{
-    text-align: center;  
-}
-.about h2{
+h2{
     color: #139139;
+    padding-top: 20px;
+    font-size:30px;
+}
+.about p{
+    padding:0px 80px;
+    text-align: center;  
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif
 }
 .cards{
     display: flex;
     align-items: center;
     justify-content: center;
     height: 200px;
-    padding-top: 45px;
+    padding-top: 40px;
     text-align: center;
 }
 .cards img{
@@ -83,29 +89,38 @@
 .card-body{
     height:100%;
 }
+.card-body{
+    height:100%;
+    font-size: 15px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', "Geneva", Verdana, sans-serif;
+    /* bottom: 660px; */
+}
 .card1{
-    width: 50%;
-    height: 100%;
+    width: 100%;
+    /* padding-top: 340px; */
+    height: 50%;
 }
 .card2{
-    width: 50%;
-    height: 100%; 
+    /* padding-top:140px; */
+    width: 100%;
+    height: 50%; 
 }
 .card2 p {
-    padding: 0px 100px;
+    padding: 0px 50px;
 }
+
 .awards{
     padding-top: 100px;
     text-align: center;
-}
-.awards h2{
-    color: #139139;
 }
 .trophies{
     display: flex;
     align-items: center;
     justify-content: center; 
-    /* padding-top: 30px; */
+    padding-top: 30px;
+}
+.trophies p{
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
 }
 .trophies img{
     height:100px;
@@ -113,5 +128,266 @@
 }
 .achievements{
     width: 20%;
-    padding : 30px 20px
+    padding : 30px 20px;
+}
+.form{
+    /* display:flex;
+    justify-content: center; */
+    text-align: center;
+    background-color: rgb(238, 238, 238)
+}
+.form h2{
+    background-color: #d8e1f8;;
+}
+footer{
+    height:70px;
+    background-color: #10563C; 
+    color:white;
+    padding: 0px 20px;
+}
+.social{
+    padding-left: 70%;
+}
+.fa{
+    padding:10px;
+    width:25px;
+    text-align: center;
+    text-decoration: none;
+    margin:5px 2px;
+}
+.fa:hover{
+    opacity: 0.5;
+}
+.fa-facebook{
+    background: #3B5998;
+    color: white;
+    font-weight: bold;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.fa-twitter{
+    background: #55ACEE;
+    color: white;
+}
+.fa-instagram{
+    background: #125688;
+    color: white;
+}
+
+@media screen and (max-width:1140px){ 
+    *{
+        margin: 2px 0px;
+        padding: 0px;
+        scroll-behavior: smooth;
+    }
+    .navbar{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        
+    }
+    .logo{
+        width: 50%;
+    }
+    .logo img{
+        height:40px;
+        width:110px;
+        margin-left: 25%;
+    }
+    .links{
+        width: 50%;
+        margin-left: 330px;
+        font-family: 'Bodoni MT', 'Courier New', Courier, monospace;
+    }
+    .links a{
+        color: #0a0a0a;
+        text-decoration: none;
+        font-size: 23px;
+        padding: 0px 25px;
+    }
+    .links a:hover{
+        color:grey;    
+    }
+    .background-image{
+        background: rgba(0,0,0,0.5)url("background.jpg");
+        background-blend-mode: darken;
+        background-size: cover;
+        height: 100vh;
+        width: 100%;
+    }
+    .text-section{
+        color:white;
+        font-size: 27px;
+        text-align: center;
+    }
+    
+    .text-section p{
+        font-family: 'Dejavu Sans',' Bodoni MT', 'Arial', 'Helvetica', 'sans-serif' ;
+        padding: 10vh 50px;  
+    }
+    .KnowMoreLink{
+        position: absolute;
+        top: 85vh;
+        left: 15vh;
+        right: 15vh;
+        /* font-size: 540px; */
+    }
+    
+    .text-section a{
+        text-decoration: none;
+        color:white;
+        font-size: 19px;
+        font-style:italic;
+        position: relative;
+        bottom: 130px;
+
+    }
+    .text-section a:hover{
+        text-decoration: underline;
+        color:antiquewhite;
+    }
+    .about{
+        text-align: center; 
+    }
+    h2{
+        color: #139139;
+        padding-top: 20px;
+        font-size: 50px;
+    }
+    .about p{
+        padding:20px 100px;
+        text-align: center;  
+        font-size: 20px;
+        font-family: Arial, Helvetica, sans-serif
+    }
+    .cards{
+        display: flex;
+        flex-direction: column;
+        justify-content:center;
+        text-align: center;
+        align-items:center;
+        height: 200px;
+        /* padding-top: 100px; */
+    }
+    .cards img{
+        height: 270px;
+        width: 470px;
+    }
+    .card-body{
+        height:100%;
+        font-size: 17px;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', "Geneva", Verdana, sans-serif;
+        /* bottom: 660px; */
+    }
+    .card1{
+        width: 50rem;
+        height: 50%;
+        padding-top: 340px;
+    }
+    .card2{
+        width: 75%;
+        height: 50%; 
+        padding-top: 340px;
+    }
+    .card2 p {
+        padding: 0px 50px;
+    }
+    .awards{
+        padding-top: 700px;
+        /* text-align: center; */
+    }
+    .trophies{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center; 
+        padding-top: 30px;
+    } 
+    .trophies p{
+        font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        font-size: 20px;
+        padding: 0px 95px;
+    }
+    .achievements{
+        width: 100%;
+        padding : 30px 10px
+    } 
+    .trophies img{
+        height: 200px;
+        width: 200px;
+         text-align: center; 
+    }
+
+    /* .trophies p{
+        font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        font-size: 23px;
+    }
+     .left-align, .right-align{
+        width: 100%;
+        font-size: 30px;
+        padding-bottom: 50px; 
+        flex-direction: column-reverse;
+    }  
+    /* .left-align img{
+        float:left;
+        position: relative;
+        left:50px;
+        height:150px;
+        width:150px;
+    }
+    .right-align img{
+        float:right;
+        position: relative;
+        right:5%;
+        height:150px;
+        width:150px;
+    } */
+
+    .trophies h3{
+        font-size: 25px;
+        padding-top:30px;
+        text-align: center;
+    }
+    /* .text-right{
+        float:right;
+        position:relative;
+        padding: 0px 200px;
+    } */
+    .form{
+        /* display:flex;
+        justify-content: center; */
+        text-align: center;
+    }
+    footer{
+        height:70px;
+        background-color: #10563C; 
+        color:white;
+        padding: 0px 20px;
+    }
+    .social{
+        padding-left: 70%;
+    }
+    .fa{
+        padding:10px;
+        width:25px;
+        text-align: center;
+        text-decoration: none;
+        margin:5px 2px;
+    }
+    .fa:hover{
+        opacity: 0.5;
+    }
+    .fa-facebook{
+        background: #3B5998;
+        color: white;
+        font-weight: bold;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+    .fa-twitter{
+        background: #55ACEE;
+        color: white;
+    }
+    .fa-instagram{
+        background: #125688;
+        color: white;
+    }
 }
