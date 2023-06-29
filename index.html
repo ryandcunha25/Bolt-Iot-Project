@@ -1,6 +1,13 @@
 <!-- developed by: Ryan Dcunha
 started on 20-06-2023 -->
 
+<!-- ALL THE OBJECTIVES FOR THE PROECT ARE MET...YAYYY -->
+<!-- stuffs still to work on...
+    1. to manipulate its colors and fonts to make it stand out. 
+    2. to make it render all on devices.
+    3. use javascript if possible.
+    4. comments in css -->
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -8,15 +15,19 @@ started on 20-06-2023 -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Inventrom</title>
     <link rel="stylesheet" href="index.css">
+    <!-- source of the below stylesheet:  https://www.w3schools.com/howto/howto_css_social_media_buttons.asp-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+    </style>
 </head>
 <body>
-    <!-- NAVIGATION BAR -->
+
     <nav class="navbar"> 
         <span class="logo"><img src="inventrom.png" alt="InventromLogo"></span>
         <span class="links">
-            <a href="about">About</a>
-            <a href="rewards">Rewards</a>
-            <a href="contact">Contact</a>
+            <a href="#about-us">About</a>
+            <a href="#rewards">Rewards</a>
+            <a href="#contact">Contact</a>
         </span>
     </nav>
 
@@ -24,23 +35,23 @@ started on 20-06-2023 -->
     <div class="background-image">
         <div class="section">
             <div class="text-section">
-                Bolt is an Internet of Things platform for enterprise <br>ready for Products and solutions.<br><br>
-                <!-- <div class="KnowMoreLink"> -->
+                <p class="text">Bolt is an Internet of Things platform for enterprise ready for Products and solutions. <br><br></p>
+                <div class="KnowMoreLink">
                 <a href="#">CLICK TO KNOW MORE</a>
-                <!-- </div> -->
+                </div>
             </div>           
         </div>
     </div>
     
     <!-- ABOUT US -->
-    <div class="about">
+    <div class="about" id="about-us">
         <h2>About Us</h2> 
-       <p>We are an award-winning IoT startup. Our team has an extensive experience in enterprise IoT projects. Before working on Bolt platform, we have<br> been strategic IoT consultants to various Fortune 500 companies.</p>
+       <p>We are an award-winning IoT startup. Our team has an extensive experience in enterprise IoT projects. Before working on Bolt platform, we have been strategic IoT consultants to various Fortune 500 companies.</p>
         
     </div> 
     <div class="cards">
         <div class="card1">
-            <img src="greenBackground.jpg" alt="img1">
+            <img src="vision.jpg" alt="vision">
             <div class="card-body">
                 <h3>Our Vision</h3>
                 <p>Build technology platforms for better communication</p>
@@ -48,43 +59,102 @@ started on 20-06-2023 -->
         </div>
         
         <div class="card2">
-            <img src="greenBackground.jpg" alt="img1">
+            <img src="mission.jpg" alt="mission">
             <div class="card-body">
                 <h3>Our Mission</h3>
-                <p>To build a Platform to make IoT development quick and easy, ad low cost for developers. This will help in better connectivity betweenhumans and machines helping us all in getting the most out of the machine.</p><br>
+                <p>To build a Platform to make IoT development quick and easy, ad low cost for developers. This will help in better connectivity between humans and machines helping us all in getting the most out of the machine.</p><br>
             </div>
         </div>
     </div>
     
-
     <!-- AWARDS SECTION   -->
-    <div class="awards">
+    <div class="awards" id = "rewards">
         <h2>Awards</h2>
         <div class="trophies">
-            <span id="showcase" class="achievements">
+            <span id="showcase" class="achievements" class="a-left">
                 <img src="showcase.jpg" alt="showcase">
                 <h3>SHOWCASE</h3>
                 <p>INDO-US STARTUP-KONNECT PROGRAM,SILICON VALLEY</p>
             </span>
-            <span id="winner1" class="achievements">
+            <span id="winner1" class="achievements" class="a-right">
                 <img src="winner1.jpg" alt="winner">
                 <h3>WINNER</h3>
                 <p>DST-LOCKHEED MARTIN INDIA INNOVATION GROWTH PROGRAM</p>
             </span>
-            <span id="winner2" class="achievements">
+            <span id="winner2" class="achievements" class="a-left">
                 <img src="winner2.jpg" alt="winner">
                 <h3>WINNER</h3>
                 <p>POWER OF IDEAS</p>
             </span>
-            <span id="winner3" class="achievements">
+            <span id="winner3" class="achievements" class="a-right">
                 <img src="winner3.jpg" alt="winner">
                 <h3>WINNER</h3>
                 <p>CHIEF MINISTER AWARD FOR BEST START UP IN INDIA</p>
             </span>
         </div>
+
+
+        <!-- <div class="trophies ">
+            <div class="left-align section section-left">
+                <span id="showcase" class="achievements" class="a-left">
+                        <img src="showcase.jpg" alt="showcase">
+                        <span class="text-right">
+                            <h3>SHOWCASE</h3>
+                            <p>INDO-US STARTUP-KONNECT PROGRAM,SILICON VALLEY</p>
+                        </span>
+                    </span>
+            </div>
+            <div class="right-align">
+                <span id="winner1" class="achievements" class="a-right">
+                    <img src="winner1.jpg" alt="winner">
+                    <span class="text-left">
+                        <h3>WINNER</h3>
+                        <p>DST-LOCKHEED MARTIN INDIA INNOVATION GROWTH PROGRAM</p>
+                    </span>
+                </span>
+            </div>
+            <div class="left-align">
+                <span id="winner2" class="achievements" class="a-left">
+                        <img src="winner2.jpg" alt="winner">
+                        <h3>WINNER</h3>
+                        <p>POWER OF IDEAS</p>
+                    </span>
+            </div>
+            <div class="right-align">
+                <span id="winner3" class="achievements" class="a-right">
+                    <img src="winner3.jpg" alt="winner">
+                    <h3>WINNER</h3>
+                    <p>CHIEF MINISTER AWARD FOR BEST START UP IN INDIA</p>
+                </span> 
+            </div>
+        </div> -->
     </div>
 
     <!-- GET IN TOUCH SECTION -->
+    <div class="form"  id="contact">
+        <h2>Get In Touch </h2>
+        <!-- <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2.js"></script>?
+        <script>
+            hbspt.forms.create({
+                portalId: "4801849",
+                formId: "b021b49f-c504-4b1d-ad2b-1bb9e587287c"
+            });
+        </script> -->
+        <script type="text/javascript" src="https://form.jotform.com/jsform/231781577506059"></script>
+    </div>
+
+    <!-- FOOTER SECTION -->
+    <footer>
+        <span class="copyright">
+            Copyright &#169; 2023 Inventrom
+        </span>
+        <span class="social">
+            <!-- classes below for the social media icons have been named according to source, w3schools -->
+            <a href="#" id = "facebook" class="fa fa-facebook"></a>
+            <a href="#" id = "instagram" class="fa fa-instagram"></a>
+            <a href="#" id = "twitter" class="fa fa-twitter"></a>
+        </span>
+    </footer>
 
 </body>
 </html>
